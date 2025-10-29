@@ -135,7 +135,7 @@
                   <div class="message-body">
                     <a href="/profile" class="d-flex align-items-center gap-2 dropdown-item">
                       <i class="ti ti-user fs-6"></i>
-                      <p class="mb-0 fs-3">My Profile</p>
+                      <p class="mb-0 fs-3 text-dark">My Profile</p>
                     </a>
                     
                     <a href="/users/logout" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
@@ -157,13 +157,12 @@
                 <div class="col-lg-8">
                   <form>
                     <div class="mb-3">
-                      <label for="withdrawalAmount" class="form-label">Withdrawal Amount (USD)</label>
-                      <input type="number" class="form-control" id="withdrawalAmount" placeholder="Enter amount">
-                      <small class="text-muted">Available balance: $ <%= " " + user.totaldeposit %></small>
+                      <label for="withdrawalAmount" class="form-label text-dark">Withdrawal Amount (USD)</label>
+                      <input type="number" class="form-control text-dark" id="withdrawalAmount" placeholder="Enter amount">
                     </div>
                     <div class="mb-3">
                       <label for="withdrawalMethod" class="form-label">Withdrawal Method</label>
-                      <select class="form-select" id="withdrawalMethod">
+                      <select class="form-select text-dark" id="withdrawalMethod">
                         <option value="btc">Bitcoin (BTC)</option>
                         <option value="eth">Ethereum (ETH)</option>
                         <option value="usdt">USDT (TRC20)</option>
@@ -172,12 +171,12 @@
                     </div>
                     <div class="mb-3">
                       <label for="withdrawalWallet" class="form-label">Withdrawal Wallet Address</label>
-                      <input type="text" class="form-control" name="WalletAddress" id="WalletAddress" placeholder="eg:1N52wHoVR79PMDishab2XmRHsbekCdGquK ">
+                      <input type="text" class="form-control text-dark" name="WalletAddress" id="WalletAddress" placeholder="eg:1N52wHoVR79PMDishab2XmRHsbekCdGquK ">
                     </div>
                     <div class="mb-3">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="termsCheck">
-                        <label class="form-check-label" for="termsCheck">
+                        <label class="form-check-label text-dark" for="termsCheck">
                           I agree to the terms and conditions
                         </label>
                       </div>
@@ -194,7 +193,7 @@
                         <p>Withdrawals are processed within 24-48 hours. Minimum withdrawal amount is $50.</p>
                       </div>
                       <h6 class="fw-semibold">Fee Structure</h6>
-                      <ul class="list-unstyled">
+                      <ul class="list-unstyled text-dark">
                         <li class="mb-2">Crypto withdrawals: 1% fee</li>
                         <li>Processing time: 1-2 business days</li>
                       </ul>

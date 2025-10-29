@@ -135,7 +135,7 @@
                   <div class="message-body">
                     <a href="/profile" class="d-flex align-items-center gap-2 dropdown-item">
                       <i class="ti ti-user fs-6"></i>
-                      <p class="mb-0 fs-3">My Profile</p>
+                      <p class="mb-0 fs-3 text-dark">My Profile</p>
                     </a>
                     
                     <a href="/users/logout" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
@@ -192,21 +192,21 @@
                           <div class="row mb-3">
                             <div class="col-md-6">
                               <label for="firstName" class="form-label">First Name</label>
-                              <input type="text" class="form-control" id="firstName" value="<%= user.first_name %>">
+                              <input type="text" class="form-control text-dark" id="firstName" value="<%= user.first_name %>">
                             </div>
                             <div class="col-md-6">
                               <label for="lastName" class="form-label">Last Name</label>
-                              <input type="text" class="form-control" id="lastName" value="<%= user.last_name %>">
+                              <input type="text" class="form-control text-dark" id="lastName" value="<%= user.last_name %>">
                             </div>
                           </div>
                           <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" value="<%= user.email %>">
+                            <input type="email" class="form-control text-dark" id="email" value="<%= user.email %>">
                           </div>
 
                           <div class="mb-3">
-                            <label for="email" class="form-label">Plan Type</label>
-                            <input type="email" class="form-control" id="email" value="<%= user.plantype %>">
+                            <label for="plantype" class="form-label">Plan Type</label>
+                            <input type="text" class="form-control text-dark"  id="email" value="<%= user.plantype %>">
                           </div>
                           <!-- <div class="mb-3">
                             <label for="phone" class="form-label">Phone</label>
