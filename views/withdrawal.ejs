@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Crypto Investment Dashboard</title>
+  <title>Crypto Investment Dashboard - Request Withdrawal</title>
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
 </head>
@@ -15,7 +15,6 @@
     data-sidebar-position="fixed" data-header-position="fixed">
     <!-- Sidebar Start -->
     <aside class="left-sidebar">
-      <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="/" class="text-nowrap logo-img">
@@ -25,7 +24,6 @@
             <i class="ti ti-x fs-8"></i>
           </div>
         </div>
-        <!-- Sidebar navigation-->
         <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
           <ul id="sidebarnav">
             <li class="nav-small-cap">
@@ -34,9 +32,7 @@
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="/" aria-expanded="false">
-                <span>
-                  <i class="ti ti-layout-dashboard"></i>
-                </span>
+                <span><i class="ti ti-layout-dashboard"></i></span>
                 <span class="hide-menu">Dashboard</span>
               </a>
             </li>
@@ -46,29 +42,23 @@
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="/invest" aria-expanded="false">
-                <span>
-                  <i class="ti ti-shopping-cart"></i>
-                </span>
+                <span><i class="ti ti-shopping-cart"></i></span>
                 <span class="hide-menu">Make an Investment</span>
               </a>
-              </li>
-              <li class="sidebar-item">
-                <a class="sidebar-link" href="/deposit-funds" aria-expanded="false">
-                  <span>
-                    <i class="ti ti-wallet"></i>
-                  </span>
-                  <span class="hide-menu">Make a Deposit</span>
-                </a>
-                </li>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="/deposit-funds" aria-expanded="false">
+                <span><i class="ti ti-wallet"></i></span>
+                <span class="hide-menu">Make a Deposit</span>
+              </a>
+            </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">Membership</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="/buy-premium" aria-expanded="false">
-                <span>
-                  <i class="ti ti-crown"></i>
-                </span>
+                <span><i class="ti ti-crown"></i></span>
                 <span class="hide-menu">Premium Membership</span>
               </a>
             </li>
@@ -78,17 +68,13 @@
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="/withdrawal" aria-expanded="false">
-                <span>
-                  <i class="ti ti-cash"></i>
-                </span>
+                <span><i class="ti ti-cash"></i></span>
                 <span class="hide-menu">Withdraw Funds</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="/view-withdrawal" aria-expanded="false">
-                <span>
-                  <i class="ti ti-calendar"></i>
-                </span>
+                <span><i class="ti ti-calendar"></i></span>
                 <span class="hide-menu">Withdrawal History</span>
               </a>
             </li>
@@ -98,23 +84,19 @@
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="/help-desk" aria-expanded="false">
-                <span>
-                  <i class="ti ti-help"></i>
-                </span>
+                <span><i class="ti ti-help"></i></span>
                 <span class="hide-menu">Help Desk</span>
               </a>
             </li>
           </ul>
-          
         </nav>
-        <!-- End Sidebar navigation -->
       </div>
-      <!-- End Sidebar scroll-->
     </aside>
-    <!--  Sidebar End -->
-    <!--  Main wrapper -->
+    <!-- Sidebar End -->
+
+    <!-- Main wrapper -->
     <div class="body-wrapper">
-      <!--  Header Start -->
+      <!-- Header Start -->
       <header class="app-header">
         <nav class="navbar navbar-expand-lg navbar-light">
           <ul class="navbar-nav">
@@ -137,7 +119,6 @@
                       <i class="ti ti-user fs-6"></i>
                       <p class="mb-0 fs-3 text-dark">My Profile</p>
                     </a>
-                    
                     <a href="/users/logout" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
                   </div>
                 </div>
@@ -146,63 +127,59 @@
           </div>
         </nav>
       </header>
-      <!--  Header End -->
+      <!-- Header End -->
+
       <div class="container-fluid">
-      <div id="withdraw" class="row fade active show" id="tab-content-0" role="tabpanel"">
-        <div class="col-lg-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title fw-semibold mb-4">Request Withdrawal</h5>
-              <div class="row">
-                <div class="col-lg-8">
-                  <form>
-                    <div class="mb-3">
-                      <label for="withdrawalAmount" class="form-label text-dark">Withdrawal Amount (USD)</label>
-                      <input type="number" class="form-control text-dark" id="withdrawalAmount" placeholder="Enter amount">
-                    </div>
-                    <div class="mb-3">
-                      <label for="withdrawalMethod" class="form-label">Withdrawal Method</label>
-                      <select class="form-select text-dark" id="withdrawalMethod">
-                        <option value="btc">Bitcoin (BTC)</option>
-                        <option value="eth">Ethereum (ETH)</option>
-                        <option value="usdt">USDT (TRC20)</option>
-                        <option value="bank">Bank Transfer</option>
-                      </select>
-                    </div>
-                    <div class="mb-3">
-                      <label for="withdrawalWallet" class="form-label">Withdrawal Wallet Address</label>
-                      <input type="text" class="form-control text-dark" name="WalletAddress" id="WalletAddress" placeholder="eg:1N52wHoVR79PMDishab2XmRHsbekCdGquK ">
-                    </div>
-                    <div class="mb-3">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="termsCheck">
-                        <label class="form-check-label text-dark" for="termsCheck">
-                          I agree to the terms and conditions
-                        </label>
+        <div id="withdraw" class="row fade active show">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title fw-semibold mb-4">Request Withdrawal</h5>
+                <div class="row">
+                  <div class="col-lg-8">
+                    <form>
+                      <div class="mb-3">
+                        <label for="withdrawalAmount" class="form-label text-dark">Withdrawal Amount (USD)</label>
+                        <input type="number" class="form-control text-dark" id="withdrawalAmount" placeholder="Enter amount">
                       </div>
-                    </div>
-                    <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#exampleModal" onclick="verify()" >Request Withdrawal</button>
-                  </form>
-                </div>
-                <div class="col-lg-4">
-                  <div class="card bg-light-primary">
-                    <div class="card-body">
-                      <h5 class="card-title">Withdrawal Information</h5>
-                      <div class="alert alert-warning">
-                        <h6 class="alert-heading">Important Notice</h6>
-                        <p>Withdrawals are processed within 24-48 hours. Minimum withdrawal amount is $50.</p>
+                      <div class="mb-3">
+                        <label for="withdrawalMethod" class="form-label">Withdrawal Method / Network</label>
+                        <select class="form-select text-dark" id="withdrawalMethod">
+                          <option value="Bitcoin (BTC)">Bitcoin (BTC)</option>
+                          <option value="Ethereum (ETH)">Ethereum (ETH)</option>
+                          <option value="USDT (TRC20)">USDT (TRC20)</option>
+                        </select>
                       </div>
-                      <h6 class="fw-semibold">Fee Structure</h6>
-                      <ul class="list-unstyled text-dark">
-                        <li class="mb-2">Crypto withdrawals: 1% fee</li>
-                        <li>Processing time: 1-2 business days</li>
-                      </ul>
-                      <!-- <h6 class="fw-semibold mt-3">Recent Withdrawals</h6>
-                      <ul class="list-unstyled">
-                        <li class="mb-1">$500 - BTC - 2 days ago</li>
-                        <li class="mb-1">$250 - ETH - 1 week ago</li>
-                        <li>$100 - USDT - 2 weeks ago</li>
-                      </ul> -->
+                      <div class="mb-3">
+                        <label for="withdrawalWallet" class="form-label">Withdrawal Wallet Address</label>
+                        <input type="text" class="form-control text-dark" name="WalletAddress" id="WalletAddress" placeholder="eg: 1N52wHoVR79PMDishab2XmRHsbekCdGquK">
+                      </div>
+                      <div class="mb-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="termsCheck">
+                          <label class="form-check-label text-dark" for="termsCheck">
+                            I agree to the terms and conditions
+                          </label>
+                        </div>
+                      </div>
+                      <!-- Button triggers modal and populates details -->
+                      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#confirmModal" onclick="populateModal()">Request Withdrawal</button>
+                    </form>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card bg-light-primary">
+                      <div class="card-body">
+                        <h5 class="card-title">Withdrawal Information</h5>
+                        <div class="alert alert-warning">
+                          <h6 class="alert-heading">Important Notice</h6>
+                          <p>Withdrawals are processed within 24-48 hours. Minimum withdrawal amount is $50.</p>
+                        </div>
+                        <h6 class="fw-semibold">Fee Structure</h6>
+                        <ul class="list-unstyled text-dark">
+                          <li class="mb-2">Crypto withdrawals: 1% fee</li>
+                          <li>Processing time: 1-2 business days</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -211,48 +188,61 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Confirm Transaction</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-              </button>
+
+      <!-- Enhanced Confirmation Modal with Amount, Wallet, Network -->
+      <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog mt-5">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="confirmModalLabel">Confirm Withdrawal Request</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Please review your withdrawal details:</p>
+              <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                  <strong>💰 Amount (USD):</strong>
+                  <span id="modalAmount">—</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                  <strong>🌐 Network / Method:</strong>
+                  <span id="modalNetwork">—</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center text-dark">
+                  <strong>🏦 Wallet Address:</strong>
+                  <span id="modalWallet" class="text-break" style="max-width: 200px;">—</span>
+                </li>
+              </ul>
+              <p class="text-danger small">* Ensure the wallet address and network are correct. Transactions are irreversible.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <a href="https://connect.robolevtrading.com" class="btn btn-primary">Confirm & connect</a>
+            </div>
           </div>
-          <div class="modal-body">
-              <p class="mb-0">Are you sure this wallet address  <span id="wallet"> </span> is correct</p>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">cancel</button>
-              <a href="/withdrawal-success" type="button" class="btn btn-primary">Continue</a>
-          </div>
+        </div>
       </div>
     </div>
   </div>
-    <script>
-      (function($) {
-  'use strict';
-  $('#exampleModal-4').on('show.bs.modal', function(event) {
-    var button = $(event.relatedTarget) // Button that triggered the modal
-    var recipient = button.data('whatever') // Extract info from data-* attributes
-    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-    var modal = $(this)
-    modal.find('.modal-title').text('New message to ' + recipient)
-    modal.find('.modal-body input').val(recipient)
-  })
-})(jQuery);
 
-      function verify() {
-        var x = document.getElementById("WalletAddress").value;
-        document.getElementById("wallet").innerHTML = x;
-  
-      }
-           
-      </script>  
-  </div>
+  <script>
+    function populateModal() {
+      // Get values from form
+      let amount = document.getElementById("withdrawalAmount").value;
+      let network = document.getElementById("withdrawalMethod").options[document.getElementById("withdrawalMethod").selectedIndex].text;
+      let wallet = document.getElementById("WalletAddress").value;
+
+      // Validate (optional but friendly)
+      if (!amount) amount = "Not specified";
+      if (!wallet) wallet = "Not provided";
+
+      // Populate modal fields
+      document.getElementById("modalAmount").innerText = amount ? `$${amount}` : "—";
+      document.getElementById("modalNetwork").innerText = network;
+      document.getElementById("modalWallet").innerText = wallet;
+    }
+  </script>
+
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/sidebarmenu.js"></script>
@@ -260,7 +250,6 @@
   <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
   <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
   <script src="../assets/js/dashboard.js"></script>
- 
 </body>
 
 </html>
